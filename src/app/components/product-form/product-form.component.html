@@ -1,0 +1,19 @@
+<div class="card card-body">
+  <form (ngSubmit)="addProduct()">
+
+    <div class="form-group">
+      <input class="form-control" type="text" name="name" [(ngModel)]="product.name" placeholder="insert name">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" name="description" [(ngModel)]="product.description" placeholder="insert description">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="number" name="price" [(ngModel)]="product.price" placeholder="insert price">
+    </div>
+
+    <button class="btn btn-dark btn-block" type="submit">
+      save
+    </button>
+  </form>
+
+</div>
